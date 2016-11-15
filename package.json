@@ -1,0 +1,48 @@
+{
+  "name": "associated",
+  "version": "0.1.0",
+  "description": "get label(s) for input or get input for label",
+  "main": "index.js",
+  "author": "Ryan Van Etten",
+  "license": "MIT",
+  "homepage": "https://github.com/ryanve/associated",
+  "scripts": {
+    "pretest": "jshint index.js && jshint test.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "dom",
+    "input",
+    "inputs",
+    "labels",
+    "label",
+    "browser",
+    "traversal",
+    "element",
+    "forms",
+    "form"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanve/associated.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanve/associated/issues"
+  },
+  "jshintConfig": {
+    "asi": true,
+    "boss": true,
+    "browser": true,
+    "eqnull": true,
+    "expr": true,
+    "supernew": true,
+    "latedef": "nofunc",
+    "maxerr": 5,
+    "node": true,
+    "undef": true,
+    "unused": true
+  },
+  "devDependencies": {
+    "jshint": "^2.9.3"
+  }
+}
