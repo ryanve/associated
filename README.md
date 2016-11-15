@@ -1,5 +1,4 @@
 # associated
-DOM utility to get label(s) for input or get input for label
 
 ```
 npm install associated --save
