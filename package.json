@@ -20,6 +20,8 @@
     "browser",
     "traversal",
     "element",
+    "controls",
+    "form-control",
     "forms",
     "form"
   ],
