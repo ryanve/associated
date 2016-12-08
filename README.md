@@ -10,14 +10,15 @@ var associated = require('associated')
 
 ## API
 
-### `associated.input(label)`
-- Get the input associated with <var>label</var>
+### `associated.input($label)`
+- Get `$input` associated with `$label`
 
-### `associated.label(input)`
-- Get the label associated with <var>input</var>
+### `associated.label($input)`
+- Get the `$label` associated with `$input`
 
-### `associated.labels(input)`
-- Get an array of the labels associated with <var>input</var>
+### `associated.labels($input)`
+- Get an `$labels` associated with `$input`
+
 
 ## License
 MIT
