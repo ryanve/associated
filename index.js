@@ -2,9 +2,9 @@
   typeof module != 'undefined' && module.exports ? module.exports = make() : root[name] = make()
 }(this, 'associated', function() {
 
-  function input($label) {
+  function control($label) {
     var id = $label.attr('for')
-    return id ? new $label.constructor('#' + id) : $label.find('input')
+    return id ? new $label.constructor('#' + id) : $label.find('input,textarea,select,button')
   }
 
   function label($input) {
@@ -22,7 +22,7 @@
   }
 
   return {
-    input: input,
+    control: control,
     label: label,
     labels: labels
   }

@@ -10,15 +10,18 @@ var associated = require('associated')
 
 ## API
 
-### `associated.input($label)`
-- Get `$input` associated with `$label`
+- `$control` refers to a jQuery-wrapped form control: `$input`, `$textarea`, `$select`, or `$button`
+- `$label` refers to a jQuery-wrapped single label element
+- `$labels` refers to a jQuery-wrapped label collection
 
-### `associated.label($input)`
-- Get the `$label` associated with `$input`
+### `associated.control($label)`
+- Get `$control` associated with `$label`
 
-### `associated.labels($input)`
-- Get an `$labels` associated with `$input`
+### `associated.label($control)`
+- Get the `$label` associated with `$control`
 
+### `associated.labels($control)`
+- Get an `$labels` associated with `$control`
 
 ## License
 MIT
