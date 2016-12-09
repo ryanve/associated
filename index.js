@@ -1,5 +1,7 @@
 !function(root, name, make) {
-  typeof module != 'undefined' && module.exports ? module.exports = make() : root[name] = make()
+  if (typeof module != 'undefined' && module.exports) module.exports = make()
+  else if (typeof define == 'function' && define.amd) define(make)
+  else root[name] = make()
 }(this, 'associated', function() {
 
   function control($label) {
