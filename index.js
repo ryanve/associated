@@ -9,18 +9,18 @@
     return id ? new $label.constructor('#' + id) : $label.find('input,textarea,select,button')
   }
 
-  function label($input) {
-    var $parent = $input.closest('label')
-    return $parent.length ? $parent : forId($input).first()
+  function label($control) {
+    var $parent = $control.closest('label')
+    return $parent.length ? $parent : forId($control).first()
   }
 
-  function forId($input) {
-    var id = $input.attr('id')
-    return new $input.constructor(id ? 'label[for="' +  id + '"]' : id)
+  function forId($control) {
+    var id = $control.attr('id')
+    return new $control.constructor(id ? 'label[for="' +  id + '"]' : id)
   }
 
-  function labels($input) {
-    return $input.closest('label').add(forId($input))
+  function labels($control) {
+    return $control.closest('label').add(forId($control))
   }
 
   return {
