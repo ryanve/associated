@@ -1,6 +1,6 @@
 {
   "name": "associated",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "get label(s) for input or get input for label",
   "main": "index.js",
   "author": "Ryan Van Etten",
