@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<title>Tests</title>
+<title>associated</title>
 <style>
-  html { font: 1em/1.6 sans-serif; background: silver; color: black }
-  body { width: 94%; margin: auto }
+:focus {
+  outline-color: DeepSkyBlue;
+}
+
+html {
+  font: 1em sans-serif;
+  background: Salmon;
+  color: WhiteSmoke;
+}
+
+body {
+  width: 94%;
+  margin: auto;
+}
+
+fieldset {
+  border: 0;
+  padding: .5rem;
+}
+
+.button {
+  color: Black;
+  background: WhiteSmoke;
+  display: inline-block;
+  padding: .5rem;
+  font-weight: bold;
+}
+
+:not(:hover):not(:focus) {
+  text-decoration: none;
+}
 </style>
 
-<h1>Tests</h1>
-<p><strong>Open the console to view test results</strong></p>
+<h1>associated</h1>
+<a class="button" href="https://github.com/ryanve/associated">Github</a>
+<a class="button" href="https://www.npmjs.com/package/associated">npm</a>
+
+<h2>Tests</h2>
+<p role="status" data-status></p>
 
 <fieldset>
   <input data-control-a id="a">

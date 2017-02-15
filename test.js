@@ -3,11 +3,16 @@
 
   if (typeof document == 'undefined') {
     ok('exists', !!api, true)
-    return console.log('Open test.html')
+    return console.log('Open index.html')
+  }
+
+  function status(message) {
+    document.querySelector('[data-status]').innerHTML = message
   }
 
   function ok(id, actual, correct) {
     if (!equal(actual, correct)) {
+      status('<strong>Test failed =/</strong> Open console for details.')
       throw new Error(id + ': ' + actual + ' should be ' + correct)
     }
   }
@@ -61,5 +66,6 @@
   ok('k.labels', api.labels(find('control-k')), findAll('label-k'))
   ok('l.labels', api.labels(find('control-l')), findAll('label-l'))
 
-  console.log('All tests passed =)')
+  status('<b>Tests passed =)</b>')
+  console.log('Tests passed =)')
 }();
