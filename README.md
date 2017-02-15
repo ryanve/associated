@@ -7,6 +7,8 @@ npm install associated --save
 ## Features
 - Get label(s) for a specified input
 - Get form control (input, textarea, select, button) for a specified label
+- Get associated form
+- Get associated radios
 
 ## API
 ```js
