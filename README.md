@@ -24,7 +24,7 @@ var associated = require('associated')
 - Get the `$label` associated with `$control`
 
 ### `associated.labels($control)`
-- Get an `$labels` associated with `$control`
+- Get all `$labels` associated with `$control`
 
 ## Links
 - [`associated` npm](https://www.npmjs.com/package/associated)
