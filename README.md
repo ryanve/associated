@@ -23,5 +23,6 @@ var associated = require('associated')
 ### `associated.labels($control)`
 - Get an `$labels` associated with `$control`
 
-## Playground
-[Try `associated` in your browser console](https://ryanve.github.io/associated/)
+## Links
+- [`associated` npm](https://www.npmjs.com/package/associated)
+- [`associated` tests](https://ryanve.github.io/associated/)
