@@ -3,9 +3,11 @@
   else root[name] = make()
 }(this, 'associated', function() {
 
+  var controlTags = 'input,textarea,select,button'
+
   function control($label) {
     var id = $label.attr('for')
-    return id ? new $label.constructor('#' + id) : $label.find('input,textarea,select,button')
+    return id ? new $label.constructor('#' + id) : $label.find(controlTags)
   }
 
   function label($control) {
