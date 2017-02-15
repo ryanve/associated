@@ -38,9 +38,6 @@
     "browser": true,
     "eqnull": true,
     "expr": true,
-    "globals": {
-      "define": true
-    },
     "jquery": true,
     "supernew": true,
     "latedef": "nofunc",
