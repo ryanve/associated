@@ -1,6 +1,6 @@
 {
   "name": "associated",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Get associated labels and inputs",
   "main": "index.js",
   "author": "Ryan Van Etten",
