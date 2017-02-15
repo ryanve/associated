@@ -1,7 +1,7 @@
 {
   "name": "associated",
   "version": "0.5.1",
-  "description": "get label(s) for input or get input for label",
+  "description": "Get associated labels and inputs",
   "main": "index.js",
   "author": "Ryan Van Etten",
   "license": "MIT",
