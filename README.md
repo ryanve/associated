@@ -4,11 +4,14 @@
 npm install associated --save
 ```
 
+## Features
+- Get label(s) for a specified input
+- Get form control (input, textarea, select, button) for a specified label
+
+## API
 ```js
 var associated = require('associated')
 ```
-
-## API
 
 - `$control` refers to a jQuery-wrapped form control: `$input`, `$textarea`, `$select`, or `$button`
 - `$label` refers to a jQuery-wrapped single label element
