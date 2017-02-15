@@ -23,5 +23,5 @@ var associated = require('associated')
 ### `associated.labels($control)`
 - Get an `$labels` associated with `$control`
 
-## License
-MIT
+## Playground
+[Try `associated` in your browser console](https://ryanve.github.io/associated/)
