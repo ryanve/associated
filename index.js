@@ -12,16 +12,16 @@
 
   function label($control) {
     var $parent = $control.closest('label')
-    return $parent.length ? $parent : forId($control).first()
+    return $parent.length ? $parent : fors($control).first()
   }
 
-  function forId($control) {
+  function fors($control) {
     var id = $control.attr('id')
     return new $control.constructor(id ? 'label[for="' +  id + '"]' : id)
   }
 
   function labels($control) {
-    return $control.closest('label').add(forId($control))
+    return $control.closest('label').add(fors($control))
   }
 
   function form($control) {
