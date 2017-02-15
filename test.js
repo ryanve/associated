@@ -66,6 +66,13 @@
   ok('k.labels', api.labels(find('control-k')), findAll('label-k'))
   ok('l.labels', api.labels(find('control-l')), findAll('label-l'))
 
+  ok('m.form', api.form(find('radio-m')), findAll('form-m'))
+  ok('n.form', api.form(find('radio-n')), findAll('form-n'))
+  ok('o.form', api.form(find('radio-o')), findAll('form-o'))
+  ok('m.radios', api.radios(find('radio-m')), findAll('radio-m'))
+  ok('n.radios', api.radios(find('radio-n')), findAll('radio-n'))
+  ok('o.radios', api.radios(find('radio-o')), findAll('radio-o'))
+
   status('<b>Tests passed =)</b>')
   console.log('Tests passed =)')
 }();

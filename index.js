@@ -23,9 +23,20 @@
     return $control.closest('label').add(forId($control))
   }
 
+  function form($control) {
+    return $control.closest('form,html,:root')
+  }
+
+  function radios($radio) {
+    var name = $radio.attr('name')
+    return form($radio).find('input[type="radio"][name="' + name + '"]')
+  }
+
   return {
     control: control,
+    form: form,
     label: label,
-    labels: labels
+    labels: labels,
+    radios: radios
   }
 });
