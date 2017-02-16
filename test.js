@@ -73,6 +73,12 @@
   ok('n.radios', api.radios(find('radio-n')), findAll('radio-n'))
   ok('o.radios', api.radios(find('radio-o')), findAll('radio-o'))
 
+  ok('plugin.control', api.call($('[data-label-a]'), 'control'), find('control-a'))
+  ok('plugin.label', api.call(find('label-b'), 'label'), find('label-b'))
+  ok('plugin.labels', api.call(find('control-c'), 'labels'), findAll('label-c'))
+  ok('plugin.form', api.call(find('radio-m'), 'form'), find('form-m'))
+  ok('plugin.radios', api.call(find('radio-o'), 'radios'), findAll('radio-o'))
+
   status('<b>Tests passed =)</b>')
   console.log('Tests passed =)')
 }();

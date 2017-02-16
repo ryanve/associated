@@ -33,11 +33,17 @@
     return form($radio).find('input[type="radio"][name="' + name + '"]')
   }
 
-  return {
-    control: control,
-    form: form,
-    label: label,
-    labels: labels,
-    radios: radios
+  /**
+   * @this {$} collection
+   */
+  function associated(method) {
+    return associated[method](this)
   }
+
+  associated.control = control
+  associated.form = form
+  associated.label = label
+  associated.labels = labels
+  associated.radios = radios
+  return associated
 });
