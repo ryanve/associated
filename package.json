@@ -1,12 +1,11 @@
 {
   "name": "associated",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Get associated labels and inputs",
   "main": "index.js",
   "author": "Ryan Van Etten",
   "license": "MIT",
   "homepage": "https://github.com/ryanve/associated",
-  "main": "index.js",
   "ender": "plugin.js",
   "scripts": {
     "pretest": "jshint index.js && jshint test.js",
