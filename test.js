@@ -81,4 +81,5 @@
 
   status('<b>Tests passed =)</b>')
   console.log('Tests passed =)')
+  console.dir && console.dir(api)
 }();
