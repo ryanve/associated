@@ -79,6 +79,11 @@
   ok('plugin.form', api.call(find('radio-m'), 'form'), find('form-m'))
   ok('plugin.radios', api.call(find('radio-o'), 'radios'), findAll('radio-o'))
 
+  ok('filter.input', api.input(find('label-a')), find('control-a'))
+  ok('filter.label', api.textarea(find('label-i')), find('control-i'))
+  ok('filter.select', api.select(find('label-j')), find('control-j'))
+  ok('filter.button', api.button(find('label-k')), find('control-k'))
+
   status('<b>Tests passed =)</b>')
   console.log('Tests passed =)')
   console.dir && console.dir(api)

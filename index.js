@@ -40,10 +40,20 @@
     return associated[method](this)
   }
 
+  function filter(method, selector) {
+    return function($element) {
+      return method($element).filter(selector)
+    }
+  }
+
   associated.control = control
   associated.form = form
   associated.label = label
   associated.labels = labels
   associated.radios = radios
+  associated.input = filter(control, 'input')
+  associated.textarea = filter(control, 'textarea')
+  associated.select = filter(control, 'select')
+  associated.button = filter(control, 'button')
   return associated
 });
