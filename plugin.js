@@ -1,0 +1,1 @@
+$.prototype.associated = require('./');
