@@ -11,9 +11,12 @@ npm install associated --save
 - Get associated radios
 
 ## API
+
 ```js
 var associated = require('associated')
 ```
+
+### Parameters
 
 - `$form` refers to a jQuery-wrapped form element
 - `$root` refers to a jQuery-wrapped `:root` element
@@ -23,20 +26,34 @@ var associated = require('associated')
 - `$radio` refers to a jQuery-wrapped radio input
 - `$radios` refers to a jQuery-wrapped radio input collection
 
-### `associated.control($label)`
+### Methods
+
+#### `associated.control($label)`
 - Get `$control` associated with `$label`
 
-### `associated.label($control)`
+#### `associated.label($control)`
 - Get the `$label` associated with `$control`
 
-### `associated.labels($control)`
+#### `associated.labels($control)`
 - Get all `$labels` associated with `$control`
 
-### `associated.form($control)`
+#### `associated.form($control)`
 - Get associated `$form` or else `$root`
 
-### `associated.radios($radio)`
+#### `associated.radios($radio)`
 - Get `$radios` associated by `[name]`
+
+### Chaining
+
+#### Setup `associated` for use as plugin for jQuery or ender
+```js
+$.prototype.associated = associated
+```
+
+#### Then use `.associated` to call [methods](#methods) from the chain like
+```js
+$('#example').associated('form')
+```
 
 ## Links
 - [`associated` npm](https://www.npmjs.com/package/associated)
